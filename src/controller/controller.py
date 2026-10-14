@@ -85,8 +85,4 @@ class Controller:
     def _format_cached_result(self, cached: dict) -> str:
         if cached["error_message"]:
             return f"Тип: {cached['triangle_type']}. {cached['error_message']}"
-
-        triangle_type, vertices, _ = self.calculator.calculate(
-            [str(cached["length1"]), str(cached["length2"]), str(cached["length3"])]
-        )
-        return f"Тип: {triangle_type}. Вершины: {vertices}"
+        return f"Тип: {cached['triangle_type']}"
