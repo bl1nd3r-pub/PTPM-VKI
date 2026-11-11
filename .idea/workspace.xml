@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5656a7cd-3c5f-42dd-bf70-1faf7b34ba06" name="Changes" comment="Изменена логика проверки на наличие кэша, изменены тесты">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_GUIDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logger/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/forum_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logger/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/logger/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Запрос.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Запрос.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lab_3_Babikov2307a1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bl1nd3r-pub&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bl1nd3r-pub/PTPM-VKI&quot;,
+    &quot;accountId&quot;: &quot;d3038ac8-c629-4af1-9ad1-ec97a56f09a2&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000348225039402" />
+      <entry key="S2" value="1.2028871945975153" />
+      <entry key="S5" value="2.2073754808402617" />
+      <entry key="S10" value="3.1957567448522988" />
+      <entry key="S30" value="4.315873284407887" />
+      <entry key="S60" value="5.212864427875665" />
+      <entry key="M2" value="9.930853280907423" />
+      <entry key="M5" value="34.459098094517884" />
+      <entry key="M10" value="122.85657591423235" />
+      <entry key="M15" value="255.1103139748069" />
+      <entry key="M30" value="670.3215055619752" />
+      <entry key="H1" value="1300.3391576302574" />
+      <entry key="H2" value="1977.8796357904318" />
+      <entry key="H4" value="2513.429772913825" />
+      <entry key="D1" value="3122.1876831457075" />
+      <entry key="W1" value="3245.776348427716" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="5.371871367757494E-8" />
+      <entry key="MS500" value="0.035158077646525294" />
+      <entry key="S2" value="0.43301832947431595" />
+      <entry key="S5" value="0.7154882600114563" />
+      <entry key="S10" value="0.8458653911890806" />
+      <entry key="S30" value="0.9457298249408262" />
+      <entry key="S60" value="0.9724864137564218" />
+      <entry key="M2" value="0.9861472576429836" />
+      <entry key="M5" value="0.9944477810880828" />
+      <entry key="M10" value="1.0021271130906972" />
+      <entry key="M15" value="1.0345515082508407" />
+      <entry key="M30" value="1.2689112556516637" />
+      <entry key="H1" value="1.7341585605246075" />
+      <entry key="H2" value="2.21188967069532" />
+      <entry key="H4" value="2.5568813412493174" />
+      <entry key="D1" value="2.9182353853574994" />
+      <entry key="W1" value="2.9881094452806085" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="8.619316541862135E-8" />
+      <entry key="MS500" value="0.04917307448543503" />
+      <entry key="S2" value="0.938082030814599" />
+      <entry key="S5" value="2.4760005832108947" />
+      <entry key="S10" value="3.7546398882706535" />
+      <entry key="S30" value="5.141389427334421" />
+      <entry key="S60" value="6.114994332580356" />
+      <entry key="M2" value="10.874261965524557" />
+      <entry key="M5" value="35.43243496017822" />
+      <entry key="M10" value="123.84645370080294" />
+      <entry key="M15" value="256.1353935040701" />
+      <entry key="M30" value="671.5831170037807" />
+      <entry key="H1" value="1302.067409683543" />
+      <entry key="H2" value="1980.0873468541467" />
+      <entry key="H4" value="2515.984089731863" />
+      <entry key="D1" value="3125.1054027680166" />
+      <entry key="W1" value="3248.764381658766" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JPXSqPjROizYyiF5lWYpuPNXR6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "KEY_CHAT_IN_TOOLWINDOW": "false",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.controller.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.triangle_logic.executor": "Run",
+    "Python.user_interface.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Lab__5__Babikov2307a1",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PTPM-VKI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="D:\Coding Things\PTPM-VKI\.venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5656a7cd-3c5f-42dd-bf70-1faf7b34ba06" name="Changes" comment="" />
+      <created>1789563703484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789563703484</updated>
+      <workItem from="1789563743734" duration="2453000" />
+      <workItem from="1791975901090" duration="35000" />
+    </task>
+    <task id="LOCAL-00001" summary="Реализовано вычисление вида треугольника и координат его вершин, логгирование событий">
+      <option name="closed" value="true" />
+      <created>1789565940652</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789565940652</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Изменена логика проверки на наличие кэша, изменены тесты">
+      <option name="closed" value="true" />
+      <created>1791981292031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791981292031</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Реализовано вычисление вида треугольника и координат его вершин, логгирование событий" />
+    <MESSAGE value="Изменена логика проверки на наличие кэша, изменены тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменена логика проверки на наличие кэша, изменены тесты" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PTPM_VKI$main.coverage" NAME="main Coverage Results" MODIFIED="1789565591255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
