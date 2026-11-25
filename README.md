@@ -61,15 +61,19 @@ calculator_tests/
 
 1. **Создайте и активируйте виртуальное окружение:**
    ```bash
-   python -m venv venv
+   # В основной директории проекта
+   python -m venv .venv
    # Windows: venv\Scripts\activate
    # Linux/macOS: source venv/bin/activate
    ```
 2. **Установите зависимости:**
    ```bash
-   pip install --upgrade pip
+   python.exe pip install --upgrade pip
+   # В первый раз:
    pip install selenium
    pip freeze > requirements.txt
+   # Когда уже есть requirements.txt:
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
    ```
 3. **Запустите тесты:**
    ```bash
