@@ -10,11 +10,26 @@ from pages.calculator_page import CalculatorPage
 class CalculatorTests(unittest.TestCase):
     def setUp(self):
         options = Options()
-        options.add_argument("--headless=new")
+        # options.add_argument("--headless=new")
+        options.add_argument("--start-maximized")
         options.add_argument("--window-size=1280,720")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
-        self.driver = webdriver.Chrome(options=options)
+        options.add_argument("--proxy-server=http://127.0.0.1:10808")
+        # если юзать seleniumwire:
+        # proxy_opions = {
+        #     'proxy': {
+        #         'http': 'http://127.0.0.1:10808',
+        #         'https': 'http://127.0.0.1:10808',
+        #         'no_proxy': 'localhost,127.0.0.1'
+        #     }
+        # }
+
+        self.driver = webdriver.Chrome(
+            options=options
+            #,
+            #seleniumwire_options=proxy_opions
+        )
         self.driver.set_page_load_timeout(30)
         for attempt in range(2):
             try:
